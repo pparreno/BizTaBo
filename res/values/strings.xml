@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MegaCebu</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="search_item_content">Image of Searched Item</string>
+    <string name="advanced_search_button_name">Advanced Search</string>
+    <string name="price_label">By Price:</string>
+    <string name="price_label_between">Between</string>
+    <string name="price_label_and">and</string>
+    <string name="location_label">By Location:</string>
+    <string name="near_me_button_text">Near Me!</string>
+    <string name="location_label_around">Around</string>
+    <string name="show_map_button_text">Show Map</string>
+    <string name="search_icon_image_content">Search</string>
+    <string name="location_information_label">(The default location is your current location. Please use map to specify a different location.)</string>
+    <string name="current_location_label">Around Cebu City</string>
+    <string name="hide_advanced_search_button">Hide Advanced Search</string>
+    <string name="splash_logo_content">CebuTouch Splash Logo</string>
+    <string name="no_res_text">No items found..</string>
+    <string name="description_label">Description:</string>
+    <string name="amneties_available_label">Amneties available:</string>
+    <string name="show_in_map_button_text">Show in Map</string>
+    <string name="desc_img_content">Item Image</string>
+</resources>
