@@ -1,14 +1,28 @@
 package megacebu.activities;
 
+
 import megacebu.searchview.R;
-import android.app.Activity;
+import megacebu.tools.FeaturedAdapter;
+import android.app.ListActivity;
 import android.os.Bundle;
+import android.view.Menu;
 
-public class FeaturedActivity extends Activity {
+public class FeaturedActivity extends ListActivity {
+	// dummy data
+		private static final String[] DUMMIES_SRC = new String[] {"radroom", "ayala", "radbuffet", "radpool"};
+		
+		@Override
+		protected void onCreate(Bundle savedInstanceState) {
+			super.onCreate(savedInstanceState);
+			//setContentView(R.layout.activity_main);
+			
+			setListAdapter(new FeaturedAdapter(this, DUMMIES_SRC));
+		}
 
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_featured);
-    }
+		@Override
+		public boolean onCreateOptionsMenu(Menu menu) {
+			// Inflate the menu; this adds items to the action bar if it is present.
+			getMenuInflater().inflate(R.menu.main, menu);
+			return true;
+		}
 }

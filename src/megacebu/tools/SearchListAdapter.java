@@ -24,7 +24,12 @@ public class SearchListAdapter extends ArrayAdapter<SearchedItem> implements Fil
 	private int layoutResourceId;
 	private List<SearchedItem> items;
 	private List<SearchedItem> original_items;		// used to refresh the search list
-
+	public boolean no_results = false;
+	
+	public float price_from;
+	public float price_to = 1000000;
+	
+	
 	public SearchListAdapter(Context context, int layoutResourceId, List<SearchedItem> items)
 	{		
 		super(context, layoutResourceId, items);
@@ -92,8 +97,11 @@ public class SearchListAdapter extends ArrayAdapter<SearchedItem> implements Fil
 				{
 					if(sItem.getItem_name().toLowerCase().contains(constraint))
 					{
-						System.out.println("Item added: " + sItem.getItem_name());
-						FilteredItems.add(sItem);
+						if(sItem.getItem_price() >= price_from && sItem.getItem_price() < price_to)
+						{
+							System.out.println("Item added: " + sItem.getItem_name());
+							FilteredItems.add(sItem);
+						}
 					}
 				}
 				
@@ -101,6 +109,8 @@ public class SearchListAdapter extends ArrayAdapter<SearchedItem> implements Fil
 				
 				results.count = FilteredItems.size();
 				results.values = FilteredItems;
+				
+				
 				
 				return results;
 			}
@@ -113,6 +123,13 @@ public class SearchListAdapter extends ArrayAdapter<SearchedItem> implements Fil
 				
 					setItems((List<SearchedItem>) results.values);
 					notifyDataSetChanged();
+					
+					if(results.count < 1)
+					{
+						no_results = true;
+					} else {
+						no_results = false;
+					}
 			}
 		};
 		
@@ -140,5 +157,10 @@ public class SearchListAdapter extends ArrayAdapter<SearchedItem> implements Fil
 		this.items = items;
 	}
 	
+	public void setPriceRange(float price_from, float price_to)
+	{
+		this.price_from = price_from;
+		this.price_to = price_to;
+	}
 }
 

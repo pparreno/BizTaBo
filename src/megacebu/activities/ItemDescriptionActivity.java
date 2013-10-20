@@ -21,6 +21,9 @@ public class ItemDescriptionActivity extends Activity {
 		ImageView item_rating = (ImageView) findViewById(R.id.desc_item_rating);
 		TextView item_name = (TextView) findViewById(R.id.desc_item_name);
 		TextView item_type = (TextView) findViewById(R.id.desc_item_type);
+		TextView item_price = (TextView) findViewById(R.id.desc_item_price);
+		TextView item_description = (TextView) findViewById(R.id.description_text);
+		TextView item_amenities = (TextView) findViewById(R.id.amneties_text);
 		// Change available amneties to activities (for tourist destination)
 		TextView amnety_label = (TextView) findViewById(R.id.amneties_label);
 		
@@ -30,6 +33,12 @@ public class ItemDescriptionActivity extends Activity {
 		item_rating.setBackgroundResource(i.getExtras().getInt("rating"));
 		item_name.setText(i.getExtras().getString("item_name"));
 		item_type.setText(i.getExtras().getString("item_type"));
+		item_price.setText(i.getExtras().getString("item_price"));
+		item_description.setText(i.getExtras().getString("item_description"));
+		item_amenities.setText(i.getExtras().getString("item_amenities"));
+		
+		System.out.println(i.getExtras().getString("item_description"));
+		System.out.println("Description:" + item_description.getText());
 		
 		if(i.getExtras().getString("item_type").contains("Hotel"))
 		{

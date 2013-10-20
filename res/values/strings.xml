@@ -20,7 +20,7 @@
     <string name="splash_logo_content">CebuTouch Splash Logo</string>
     <string name="no_res_text">No items found..</string>
     <string name="description_label">Description:</string>
-    <string name="amneties_available_label">Amneties available:</string>
+    <string name="amneties_available_label">Amenities available:</string>
     <string name="show_in_map_button_text">Show in Map</string>
     <string name="desc_img_content">Item Image</string>
 </resources>

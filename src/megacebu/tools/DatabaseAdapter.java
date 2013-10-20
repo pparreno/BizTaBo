@@ -82,8 +82,7 @@ public class DatabaseAdapter {
 			item.setItem_name(c.getString(0));
 		//	item.setItem_icon(item.convertStringResource(c.getString(1)));
 			item.setItem_type("Hotel");
-			item.setItem_price_from(c.getFloat(2));
-			item.setItem_price_to(c.getFloat(3));
+
 			item.setItem_description(c.getString(4));
 		//	item.setItem_rating(item.convertStringResource(c.getString(5)));
 			item.setItem_lat(c.getDouble(6));

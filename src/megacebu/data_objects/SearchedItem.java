@@ -11,12 +11,11 @@ public class SearchedItem {
 	// Change data type when the dummy data are replaced with the ones in DB
 	private int item_icon;
 	private int item_rating;		// Please change this accordingly when rating algorithm is established
-	private float item_price_from;
-	private float item_price_to;
+	private float item_price;
 	private double item_long;
 	private double item_lat;
 	
-	private String item_name, item_type, item_description, item_location;
+	private String item_name, item_type, item_description, item_location, item_amneties;
 	
 	public SearchedItem()
 	{
@@ -29,6 +28,20 @@ public class SearchedItem {
 		this.item_rating = item_rate;
 		this.item_name = item_nme;
 		this.item_type = item_typ;
+	}
+	
+	public SearchedItem(int item_ic, int item_rate, String item_nme, String item_typ, 
+			float item_price, double item_lat, double item_long, String item_desp, String item_amen)
+	{
+		this.item_icon = item_ic;
+		this.item_rating = item_rate;
+		this.item_name = item_nme;
+		this.item_type = item_typ;
+		this.item_price = item_price;
+		this.item_lat = item_lat;
+		this.item_long = item_long;
+		this.setItem_description(item_desp);
+		this.setItem_amneties(item_amen);
 	}
 	
 	// Getters and Setters
@@ -63,24 +76,6 @@ public class SearchedItem {
 
 	public void setItem_type(String item_type) {
 		this.item_type = item_type;
-	}
-	
-	
-	public float getItem_price_from() {
-		return item_price_from;
-	}
-
-	public void setItem_price_from(float item_price_from) {
-		this.item_price_from = item_price_from;
-	}
-
-
-	public float getItem_price_to() {
-		return item_price_to;
-	}
-
-	public void setItem_price_to(float item_price_to) {
-		this.item_price_to = item_price_to;
 	}
 
 
@@ -141,6 +136,22 @@ public class SearchedItem {
 	{
 		// For the meantime
 		return R.drawable.alba_uno_hotel;
+	}
+
+	public float getItem_price() {
+		return item_price;
+	}
+
+	public void setItem_price(float item_price) {
+		this.item_price = item_price;
+	}
+
+	public String getItem_amneties() {
+		return item_amneties;
+	}
+
+	public void setItem_amneties(String item_amneties) {
+		this.item_amneties = item_amneties;
 	}
 	
 

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    	xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/search_items"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#669999" >
+         
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+    <ImageButton 
+            android:id="@+id/advanced_search_button"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:background="@drawable/ic_adv_search_button"
+            android:contentDescription="@string/search_icon_image_content"
+            android:onClick="onAdvancedSearchButtonClicked"
+            android:padding="20dp" />
+
+        <EditText
+            android:id="@+id/search_input"
+            android:layout_width="200dp"
+            android:layout_height="25dp"
+            android:textSize="12sp"
+            android:layout_toRightOf="@id/advanced_search_button"
+            android:inputType="text"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_centerInParent="true">
+            <requestFocus />
+        </EditText>
+        
+   		<ImageButton
+            android:id="@+id/search_button"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:background="@drawable/ic_search_button"
+            android:contentDescription="@string/search_icon_image_content"
+            android:onClick="onSearchButtonClicked"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/search_input" />
+   		 </RelativeLayout>        
+    </RelativeLayout>

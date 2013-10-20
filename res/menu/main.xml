@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_options"
+        android:icon="@drawable/control"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="Options"/>
+    
+     <item
+        android:id="@+id/action_sort"
+        android:icon="@drawable/sync"
+        android:showAsAction="always"
+        android:title="Sort"/>
+
+</menu>

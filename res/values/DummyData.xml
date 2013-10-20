@@ -23,7 +23,47 @@
         <item>3</item>
         <item>4</item>
         <item>1</item>
-    </string-array>    
+    </string-array> 
+    <string-array name="hotel_price">
+        <item>3750</item>
+        <item>1500</item>
+        <item>2500</item>
+        <item>2000</item>
+        <item>3000</item>
+        <item>1000</item>
+    </string-array>
+    <string-array name="hotel_coor_lat">
+        <item>10.319606</item>
+        <item>10.303008</item>
+        <item>10.307903</item>
+        <item>2000</item>
+        <item>3000</item>
+        <item>1000</item>
+    </string-array>
+    <string-array name="hotel_coor_long">
+        <item>123.911415</item>
+        <item>123.879319</item>
+        <item>123.893882</item>
+        <item>2000</item>
+        <item>3000</item>
+        <item>1000</item>
+    </string-array>
+    <string-array name="hotel_description">
+        <item>For the best of both stunning beaches and modern city attractions, stay at the five-star Radisson Blu Hotel Cebu, ideally situated in the heart of city and near the International Port and scenic beaches. For any guest itinerary, the hotel offers a range of room types, from Superior Rooms to Presidential Suites, and includes deluxe amenities such as Free Wireless High-speed Internet access, and down pillows and duvets. Feria, the hotel’s restaurant, serves delicious cuisine all day, and in the morning, assembles the expansive Super Breakfast Buffet, giving guests a jump-start to their day. On-site features include the opulent Blue Spa, an 800-square-metre, free-form swimming pool, Fitness Centre and Business Club Lounge.</item>
+        <item>Our spaciously designed rooms suit your modern lifestyle, with amenities that are made for people who are up and about. Alba Uno Hotel is ideal for business and holiday travellers.</item>
+        <item>No description available</item>
+        <item>No description available</item>
+        <item>No description available</item>
+        <item>No description available</item>
+    </string-array>
+    <string-array name="hotel_amneties">
+        <item>aircon, swimming pool, fitness center, spa, internet access, babysitting</item>
+        <item>cable tv, aircon, hot and cold shower</item>
+        <item>cable tv, internet access, fitness center, spa, gym, swimming pool</item>
+        <item>Amenities not specified</item>
+        <item>Amenities not specified</item>
+        <item>Amenities not specified</item>
+    </string-array>
     
     <string-array name="dest_names">
         <item>Mountain View</item>
