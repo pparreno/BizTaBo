@@ -1,55 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="megacebu.searchview"
+    package="com.example.biztabo"
     android:versionCode="1"
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
-        android:targetSdkVersion="18" />
+        android:minSdkVersion="14"
+        android:targetSdkVersion="15" />
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="megacebu.activities.IntroSplashScreenActivity"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+            android:name="biztabo.activities.IntroSplashScreenActivity"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-            
         </activity>
         <activity
-            android:name="megacebu.activities.MainAppActivity"
+            android:name="biztabo.activities.MainActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name="megacebu.activities.FeaturedActivity"
+            android:name="biztabo.activities.FeaturedActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name="megacebu.activities.SimpleSearchActivity"
-            android:label="@string/app_name" >
-        </activity>
-        
-        	<activity
-            android:name="megacebu.activities.ItemDescriptionActivity"
-            android:label="@string/app_name" >
-        	</activity>
-        
-        <activity
-            android:name="megacebu.activities.ShowMapActivity"
+            android:name="biztabo.activities.SimpleSearchActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name="megacebu.activities.PromosAndEventsActivity"
+            android:name="biztabo.activities.ItemDescriptionActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name="megacebu.activities.AboutCebuActivity"
+            android:name="biztabo.activities.ShowMapActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="biztabo.activities.PromosAndEventsActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="biztabo.activities.AboutCebuActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="biztabo.activities.PromosAndEventsDescription"
             android:label="@string/app_name" >
         </activity>
     </application>
