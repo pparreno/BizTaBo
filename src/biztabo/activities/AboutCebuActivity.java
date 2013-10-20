@@ -31,7 +31,8 @@ public class AboutCebuActivity extends Activity {
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
         try {
             locationManager.requestLocationUpdates(
-            LocationManager.GPS_PROVIDER, 6, 4, locationListener);
+            //LocationManager.GPS_PROVIDER, 6, 4, locationListener);
+			LocationManager.NETWORK_PROVIDER, 6, 4, locationListener);
         } catch (Exception e) {
             e.printStackTrace();
         }
